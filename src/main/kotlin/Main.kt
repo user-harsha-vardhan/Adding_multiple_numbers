@@ -7,7 +7,7 @@ fun main() {
 
     while (number < input) {
         println("enter the number #${number + 1}")
-        val firstNumber = readln().toIntOrNull() ?:0
+        val firstNumber = readln().toIntOrNull() ?: continue
         sum += firstNumber
         number++
     }
