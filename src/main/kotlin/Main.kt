@@ -1,8 +1,8 @@
 fun main() {
-    println("enter the total numbers to add:")
+    println("How many numbers will you enter:")
     val input = readln().toIntOrNull() ?: 0
     var number = 0
-    var listOfNumber = intArrayOf()
+    val listOfNumber = mutableListOf<Int>()
     var sum = 0
 
     while (number < input) {
@@ -12,7 +12,7 @@ fun main() {
         number++
         listOfNumber += addNumber
     }
-    println(listOfNumber.contentToString())
-    println("the total of three numbers is $sum")
+    println("the numbers entered are: $listOfNumber")
+    println("the total of entered numbers is $sum")
 
 }
