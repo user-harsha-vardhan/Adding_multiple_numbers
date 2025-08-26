@@ -7,10 +7,10 @@ fun main() {
 
     while (number < input) {
         println("enter the number #${number + 1}")
-        val firstNumber = readln().toIntOrNull() ?: continue
-        sum += firstNumber
+        val addNumber = readln().toIntOrNull() ?: continue
+        sum += addNumber
         number++
-        listOfNumber += firstNumber
+        listOfNumber += addNumber
     }
     println(listOfNumber.contentToString())
     println("the total of three numbers is $sum")
